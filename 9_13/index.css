@@ -1,0 +1,119 @@
+/* :root{
+  --screen-small: '640px';
+  --screen-medium:768px;
+  --screen-large:1024px;
+} */
+
+/* css variables cannot work in media query */
+
+body{
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+}
+
+.mobile-number input, .email-address input {
+  width: 100%;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border:1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* outline: none; */
+  /* transition: outline 2s; */
+}
+
+input[type=text]:focus {
+  outline: 1px solid rgb(59, 195, 248);
+  box-shadow: 0 0 8px .3rem rgba(0, 123, 255, .25);
+}
+
+.name, .password {
+  display: flex;
+  justify-content: space-between;
+}
+.name input, .password input{
+  width: 47%;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin: 1rem 0;
+  padding: 12px 64px;
+  border-radius:8px;
+  border: none;
+  color: white;
+  width: 47%;
+  cursor: pointer;
+}
+
+.register{
+  background-color: rgb(47, 127, 192);
+}
+
+.sign-in{
+  background-color: rgb(100, 199, 100);
+}
+
+.agreement{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description{
+  width: 70%;
+}
+
+.description span{
+  background-color: rgb(47, 127, 192);
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.description a{
+  color: rgb(82, 177, 255);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .name, .password {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .name input, .password input{
+    width: 100%;
+  }
+  .btn{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  button {
+    width: 100%;
+  }
+
+  .agreement{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .description{
+    width: 100%;
+  }
+}
