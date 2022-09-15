@@ -21,7 +21,7 @@ body{
   width: 80%;
 }
 
-.mobile-number input, .email-address input {
+.form__input--mobileNumber input, .form__input--emailAddress input {
   width: 100%;
 }
 
@@ -40,15 +40,15 @@ input[type=text]:focus {
   box-shadow: 0 0 8px .3rem rgba(0, 123, 255, .25);
 }
 
-.name, .password {
+.form__input--name, .form__input--password {
   display: flex;
   justify-content: space-between;
 }
-.name input, .password input{
+.form__input--name input, .form__input--password input{
   width: 47%;
 }
 
-.btn{
+.form__btn{
   display: flex;
   justify-content: space-between;
 }
@@ -63,45 +63,45 @@ button {
   cursor: pointer;
 }
 
-.register{
+.form__btn--register{
   background-color: rgb(47, 127, 192);
 }
 
-.sign-in{
+.form__btn--signIn{
   background-color: rgb(100, 199, 100);
 }
 
-.agreement{
+.form_agreement{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.description{
+.form__agreement--description{
   width: 70%;
 }
 
-.description span{
+.form__agreement--description span{
   background-color: rgb(47, 127, 192);
   color: white;
   padding: 4px;
   border-radius: 4px;
 }
 
-.description a{
+.form__agreement--description a{
   color: rgb(82, 177, 255);
   text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .name, .password {
+  .form__input--name, .form__input--password {
     display: flex;
     flex-wrap: wrap;
   }
-  .name input, .password input{
+  .form__input--name input, .form__input--password input{
     width: 100%;
   }
-  .btn{
+  .form__btn{
     display: flex;
     flex-wrap: wrap;
   }
@@ -109,11 +109,11 @@ button {
     width: 100%;
   }
 
-  .agreement{
+  .form_agreement{
     display: flex;
     flex-wrap: wrap;
   }
-  .description{
+  .form__agreement--description{
     width: 100%;
   }
 }
