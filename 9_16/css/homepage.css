@@ -1,0 +1,32 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+
+.wrapper{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-rows: 15em 15em 15em
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: 15em 15em 15em
+  }
+}

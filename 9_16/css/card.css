@@ -1,0 +1,51 @@
+:root {
+  --post-text-preview-color: #5c5c5c;
+  --post-date-color: #9e9e9e;
+  --post-link-color: #22a9f2;
+}
+
+.post{
+  border: 5px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border 700ms
+}
+
+.post:hover{
+  border: 1px solid rgb(219, 219, 219);
+  cursor: pointer;
+}
+
+.post__category{
+  margin: 1rem 0;
+}
+
+.post__category--world{
+  color: rgb(0, 183, 255);
+}
+
+.post__category--Design {
+  color: rgb(52, 218, 102);
+}
+
+.post__title {
+
+}
+
+.post__date {
+  color: var(--post-date-color);
+}
+
+.post__paragraph {
+  color: var(--post-text-preview-color);
+  font-weight: 500;
+}
+
+.post__link {
+  color: var(--post-link-color);
+  margin-bottom: 1rem;
+}
+
