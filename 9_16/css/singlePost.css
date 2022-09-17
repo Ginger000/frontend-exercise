@@ -1,0 +1,83 @@
+@import url(reset.css);
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.singlePost__container h1{
+  margin-bottom: 0.2rem;
+}
+
+.singlePost__container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singlePost_wrapper{
+  display: grid;
+    gap: 30px;
+    grid-template-columns:2fr 1fr;
+}
+
+h4{
+  margin: 0.5rem 0;
+}
+
+.right__about{
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: rgb(218, 218, 218);
+}
+
+.right_archives{
+  margin-top: 2rem;
+}
+
+.right__elsewhere{
+  margin-top: 2rem;
+}
+
+.singlePost__link{
+  color: #22a9f2;
+  
+}
+
+.singlePost__link--right{
+  display: block;
+}
+
+.right__title{
+  font-style: italic;
+}
+
+.singlePost__excerpt{
+  border: 1px solid gray;
+}
+
+.singlePost__heading, .singlePost_sub-heading{
+  margin: 0.5rem 0;
+}
+
+.singlePost__pagination-group{
+  margin: 3rem 0;
+}
+
+.singlePost__pagination{
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.singlePost__pagination--older{
+  border: 2px solid #22a9f2;
+  color: #22a9f2;
+}
+
+.singlePost__pagination--newer{
+  border: 2px solid #b4b4b4;
+  color: #b4b4b4;
+}
